@@ -1,18 +1,42 @@
 const router = require("express").Router();
 
-router.get("/api/workouts", () => {
+const {Workout} = require("../models");
+
+router.get("/api/workouts", (req,res) => {
+
+    Workout.find().then((workouts) => {
+        res.json(workouts);
+    }).catch((err) => {
+        res.status(500).json(err);
+    });
+});
+
+router.post("/api/workouts", (req,res) => {
+
+    Workout.create(req.body).then((workout) => {
+        res.json(workout);
+    }).catch((err) => {
+        res.status(500).json(err);
+    });
+});
+
+router.put("/api/workouts/:id", (req,res) => {
+
+    const newExercise = req.body;
+
+    Workout.findOneAndUpdate(req.params.id, {$push: {
+        exercises: newExercise 
+    }}).then((workout) => {
+        res.json(workout);
+    }).catch((err) => {
+        res.status(500).json(err);
+    });
 
 });
 
-router.put("/api/workouts/:id", () => {
+router.get("/api/workouts/range", (req,res) => {
 
-});
-
-router.post("/api/workouts", () => {
-
-});
-
-router.get("/api/workouts/range", () => {
+    //find with conditionals and limits
 
 });
 

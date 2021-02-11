@@ -19,6 +19,9 @@ const API = {
       body: JSON.stringify(data)
     });
 
+    console.log(id);
+    console.log(data);
+
     const json = await res.json();
 
     return json;
