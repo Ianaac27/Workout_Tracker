@@ -24,7 +24,7 @@ const WorkoutSchema = new Schema({
         }
     ]
 }, {
-    toJSON: { virtual: true }
+    toJSON: { virtuals: true }
 });
 
 WorkoutSchema.virtual('totalDuration').get(function() {
