@@ -7,7 +7,7 @@ The Workout Tracker is an app that allows users to track their progress in the g
 
 * [License](#license)
 * [Contributing](#contributing)
-* [Screenshots](#screenshots)
+* [Screenshot](#screenshot)
 * [Link](#link)
 * [Questions](#questions)
 
@@ -23,8 +23,8 @@ Ianaac27
 
 Trilogy Education Services
 
-# Screenshots
-Here are mocks of the Workout Tracker.
+# Screenshot
+Here is a mock of the Workout Tracker.
 
 ![Workout_Tracker](public/screenshot.png)
 
