@@ -24,7 +24,7 @@ Ianaac27
 Trilogy Education Services
 
 # Screenshots
-Here are mocks of the Note Taker.
+Here are mocks of the Workout Tracker.
 
 ![Workout_Tracker](public/screenshot.png)
 
